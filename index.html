@@ -6,6 +6,7 @@
     <script src="repo-card.js"></script>
     <title>Eric Stewart</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
     <div class="content-container">
@@ -13,7 +14,7 @@
             <h1>Eric Stewart</h1>
             <p>
                 <img src="icons\documenticon.svg" alt="Icon" width="24" height="24" style="vertical-align: middle; padding: 5px;">
-                <a href="resume_estewart.pdf" download> Resume</a>
+                <a href="resume_estewart.pdf" target="_blank" download> Resume</a>
                 <img src="icons/linkedinicon.svg" alt="Icon" width="24" height="24" style="vertical-align: middle; padding: 5px;">
                 <a href="https://www.linkedin.com/in/eric-stewart-113938291/" target="_blank"> Linkedin</a>
                 <img src="icons/githubicon.svg" alt="Icon" width="24" height="24" style="vertical-align: middle; padding: 5px;">
@@ -32,7 +33,7 @@
             </article>
             <article class="item-box">
                 <h2>Education</h2>
-                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <h3>Bachelor of Science in Computer Science</h3>
                 <p>
                     <img src="icons/oswegosealicon.png" alt="Icon" width="24" height="24" style="vertical-align: middle;">
                     State University of New York at Oswego (2022-2024)
@@ -40,48 +41,109 @@
             </article>
             <article class="item-box">
                 <h2>Projects</h2>
+                
+                <h3>Gravity Wave Analysis Tool (GWAT)</h3>
+
                 <p>
-                    <strong>Gravity Waves Analysis Tool (GWAT)</strong>
+                    A client-side application developed as part of a software engineering course during my 
+                    undergraduate studies. Working with a NASA representative, the program was developed to read and display data gathered during 
+                    the 2024 solar eclipse in a fashion that was readable and accessible for undergraduate students. 
                 </p>
+
+                <p>
+                    As part of my team, my responsibilities included: 
+                </p>
+
                 <ul>
-                    <li>Designed and implemented the graphical user interface and graphing algorithms.</li>
-                    <li>Collaborated in a team to iteratively define and apply core software engineering principles, ensuring project milestones were met.</li>
+                    <li>Designing and implementing the graphical user interface and graphing algorithms. </li>
+                    <li>Collaborating in a team to iteratively define and apply core software engineering principles, ensuring project milestones were met.</li>
                 </ul>
+
                 <div class="repo-card" data-repo="gravitywaveanalysistool/gwat" data-theme="dark-theme"></div>
+
+                <h3>Checkmake (A To-Do list application)</h3>
+
                 <p>
-                    <strong>Checkmake (A To-Do list application)</strong>
+                    A To-Do list web-application developed as part of a Software Design course.
                 </p>
+
+                <p>
+                    As part of the Engine/Backend team, my responsibilities included:
+                </p>
+
                 <ul>
-                    <li>Developed and integrated a secure login service, connecting the frontend and backend systems.</li>
-                    <li>Collaborated in a team to ensure robust authentication mechanisms and seamless user experience.</li>
+                    <li>Developing and integrating a secure login service, connecting the frontend and backend systems.</li>
+                    <li>Collaborating in a team to ensure robust authentication mechanisms and a seamless user experience.</li>
                 </ul>
+
                 <div class="repo-card" data-repo="Paul-Austin-Oswego-CSC480-HCI521/OZ-CSC-480-HCI-521-Fall-2024" data-theme="dark-theme"></div>
+
+                <h3>Youtube-Dl-GUI</h3>
+
                 <p>
-                    <strong>Youtube-Dl-GUI</strong>
+                    A personal project done as part of a Graphical-User-Interfaces course during my undergraduate studies. 
+                    This program hooks into youtube-dl, a command-line video downloader and presents its functions to the user in an accessible fashion.
                 </p>
-                <ul>
-                    <li>Developed the graphical interface and hooks into the backend.</li>
-                    <li>Ensured that the program was intuitive and usable for users following various gui principles and techniques.</li>
-                </ul>
+
+                <p>
+                    I developed the graphical interface and hooks into the backend, while ensuring that the program was intuitive and usable for users 
+                    following various gui principles and techniques.
+                </p>
+
                 <div class="repo-card" data-repo="ejstewart02/youtube-dl-gui" data-theme="dark-theme"></div>
+
+                <h3>MiniJava-Compiler</h3>
+
                 <p>
-                    <strong>MiniJava-Compiler</strong>
+                    A personal project done as part of a Compiler course during my undergraduate studies. 
+                    I built the parsing, type-checking, and code generation components to compile and run any MiniJava program.
                 </p>
-                <ul>
-                    <li>Built the parsing, type-checking, and code generation components for a MiniJava compiler.</li>
-                    <li>Applied advanced programming concepts, including syntax analysis and type systems, to ensure correct and efficient compilation.</li>
-                </ul>
+
                 <div class="repo-card" data-repo="ejstewart02/MiniJava-Compiler" data-theme="dark-theme"></div>
             </article>
-            <article class="item-box">
+            <article class="skills-box">
                 <h2>Skills</h2>
-                <p><strong>Programming Languages:</strong> Java, Python, C++, C</p>
-                <p><strong>Operating Systems:</strong> UNIX/Linux, Windows</p>
-                <p><strong>Libraries/Frameworks:</strong> TensorFlow, NumPy, Pandas, Open Liberty, Tkinter, ANTlR, ASM, Java Swing</p>
-                <p><strong>Programs/Environments:</strong> Intellij IDEA, PyCharm, CLion, Visual Studio, Visual Studio Code</p>
-                <p><strong>Specialized Knowledge:</strong> Java Concurrency, Compiler Design, Machine Learning, Artificial Intelligence, Computational Linguistics, GUI Design and Implementation</p>
+
+                <div id="filter-buttons" class="button-container">
+                    <button class="filter-button" data-tag="all">All</button>
+                    <button class="filter-button" data-tag="language">Languages</button>
+                    <button class="filter-button" data-tag="library">Libraries</button>
+                    <button class="filter-button" data-tag="os">OS's</button>
+                    <button class="filter-button" data-tag="program">Programs</button>
+                    <button class="filter-button" data-tag="spec">Spec. Knowledge</button>
+                </div>
+
+                <ul id="item-list" style="list-style-type: none; padding: 0;">
+                    <li data-tags="language"><i class="devicon-python-plain colored"></i> Python</li>
+                    <li data-tags="language"><i class="devicon-java-plain colored"></i> Java</li>
+                    <li data-tags="language"><i class="devicon-cplusplus-plain colored"></i> C++</li>
+                    <li data-tags="language"><i class="devicon-c-plain colored"></i> C</li>
+                    <li data-tags="os"><i class="devicon-linux-plain colored"></i> GNU/Linux</li>
+                    <li data-tags="os"><i class="devicon-windows11-original colored"></i> Windows</li>
+                    <li data-tags="library"><i class="devicon-tensorflow-original colored"></i> TensorFlow</li>
+                    <li data-tags="library"><i class="devicon-numpy-plain colored"></i> NumPy</li>
+                    <li data-tags="library"><i class="devicon-pandas-plain colored"></i> Pandas</li>
+                    <li data-tags="library"> Open Liberty</li>
+                    <li data-tags="library"> Tkinter</li>
+                    <li data-tags="library"> ANTLR</li>
+                    <li data-tags="library"><i class="devicon-oracle-original colored"></i> Oracle ASM</li>
+                    <li data-tags="library"><i class="devicon-java-plain colored"></i> Java Swing</li>
+                    <li data-tags="program"><i class="devicon-intellij-plain colored"></i> Intellij IDEA</li>
+                    <li data-tags="program"><i class="devicon-pycharm-plain colored"></i> PyCharm</li>
+                    <li data-tags="program"><i class="devicon-clion-plain colored"></i> CLion</li>
+                    <li data-tags="program"><i class="devicon-visualstudio-plain colored"></i> Visual Studio</li>
+                    <li data-tags="program"><i class="devicon-vscode-plain colored"></i> Visual Studio Code</li>
+                    <li data-tags="program"><i class="devicon-github-original colored"></i> GitHub</li>
+                    <li data-tags="spec"> Java Concurrency</li>
+                    <li data-tags="spec"> Compiler Construction</li>
+                    <li data-tags="spec"> Machine Learning</li>
+                    <li data-tags="spec"> Artificial Intelligence</li>
+                    <li data-tags="spec"> Computationl Linguistics</li>
+                    <li data-tags="spec"> GUI Design & Implementation</li>
+                </ul>
             </article>
         </main>
     </div>
+    <script src="listsort.js"></script>
 </body>
 </html>
