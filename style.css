@@ -102,8 +102,9 @@ body {
 .list-container {
     margin: 10px 0 0;
     padding-right: 10px;
+    padding-left: 10px;
     height: 460px;
-    overflow: auto;
+    overflow-y: scroll;
 }
 
 .list-container ul {
